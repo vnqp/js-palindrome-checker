@@ -22,9 +22,9 @@ function checkPalindrome(str) {
 
 function showResults(key, str) {
   if (key) {
-    resultText.innerHTML = `${str} is a palindrome`;
+    resultText.innerHTML = `<span class="bold">${str}</span> is a palindrome`;
   } else {
-    resultText.innerHTML = `${str} is not a palindrome`;
+    resultText.innerHTML = `<span class="bold">${str}</span> is not a palindrome`;
   }
 }
 
