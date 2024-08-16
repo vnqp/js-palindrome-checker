@@ -20,7 +20,6 @@ function checkPalindrome(str) {
 function showResults(key, str) {
   resultText.innerHTML = key ? `<span class="bold">${str}</span> is a palindrome` 
   : `<span class="bold">${str}</span> is not a palindrome`
-
 }
 
 function runChecker() {
