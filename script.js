@@ -4,12 +4,9 @@ const palindromeFormSubmit = document.getElementById("check-btn");
 const resultText = document.getElementById("result");
 
 function checkPalindrome(str) {
-  str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-  const strChars = str.split('');
+  const strChars = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().split('');
+  console.log(strChars)
   const strCharsReversed =  strChars.toReversed();
-
-  console.log(strChars);
-  console.log(strCharsReversed);
 
   for (let i = 0; i < strChars.length; i++) {
     if(strChars[i] !== strCharsReversed[i]) {
@@ -21,11 +18,9 @@ function checkPalindrome(str) {
 }
 
 function showResults(key, str) {
-  if (key) {
-    resultText.innerHTML = `<span class="bold">${str}</span> is a palindrome`;
-  } else {
-    resultText.innerHTML = `<span class="bold">${str}</span> is not a palindrome`;
-  }
+  resultText.innerHTML = key ? `<span class="bold">${str}</span> is a palindrome` 
+  : `<span class="bold">${str}</span> is not a palindrome`
+
 }
 
 function runChecker() {
