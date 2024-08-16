@@ -1,4 +1,3 @@
-const palindromeForm = document.getElementById("palindrome-form");
 const palindromeFormInput = document.getElementById("text-input");
 const palindromeFormSubmit = document.getElementById("check-btn");
 const resultText = document.getElementById("result");
